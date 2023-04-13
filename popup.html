@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <h1>ChatGPT Conversation Manager</h1>
+    
+    <div id="save-conversation">
+      <h2>Save Current Conversation</h2>
+      <form id="save-form">
+        <button id="save-button" type="submit">Save</button>
+        <input type="text" id="tag-input" placeholder="Add tags" />
+      </form>
+    </div>
+    <div id="saved-conversations">
+      <h2>Saved Conversations</h2>
+      <div id="filter">
+        <label for="tag-filter">Filter by tag:</label>
+        <input type="text" id="tag-filter" />
+      </div>
+      <ul id="conversations-list"></ul>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

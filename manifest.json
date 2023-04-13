@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "ChatGPT Conversation Manager",
+  "version": "1.0",
+  "description": "Organize and manage your ChatGPT conversations.",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.openai.com/*", "*://*.chat.openai.com/*"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "logo-16.png",
+      "48": "logo-48.png",
+      "96": "logo-96.png",
+      "128": "logo-128.png"
+    }
+  },
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "icons": {
+    "16": "logo-16.png",
+    "48": "logo-48.png",
+    "96": "logo-96.png",
+    "128": "logo-128.png"
+  }
+}

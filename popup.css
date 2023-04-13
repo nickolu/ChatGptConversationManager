@@ -1,0 +1,152 @@
+body {
+  font-family: Arial, sans-serif;
+  width: 460px;
+  margin: 0;
+  padding: 10px;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+input {
+  margin-left: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+.delete-conversation {
+  margin-left: 8px;
+}
+
+
+  /* General styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  background-color: #1e1e1e;
+  padding: 15px;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin-bottom: 5px;
+}
+
+/* Save conversation section */
+/* #save-conversation {} */
+  
+
+#save-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+
+#save-button {
+  background-color: #0078d4;
+  width: 50%;
+  color: #fff;
+  border: none;
+  padding: 9px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#save-button:hover {
+  background-color: #0063b1;
+}
+
+#tag-input {
+  width: 60%;
+  padding: 8px;
+  background-color: #3a3a3a;
+  border: 1px solid #6a6a6a;
+  color: #fff;
+  font-size: 14px;
+}
+
+/* Saved conversations section */
+#saved-conversations {
+  margin-bottom: 20px;
+}
+
+#filter {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;;
+}
+
+label {
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+#tag-filter {
+  width: 50%;
+  padding: 8px;
+  background-color: #3a3a3a;
+  border: 1px solid #6a6a6a;
+  color: #fff;
+  font-size: 14px;
+  flex-grow: 1;
+}
+
+/* Conversations list */
+#conversations-list {
+  list-style-type: none;
+}
+
+#conversations-list li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: #3a3a3a;
+  border: 1px solid #6a6a6a;
+}
+
+#conversations-list li a {
+  flex-grow: 1;
+  color: #1da1f2;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.delete-conversation {
+  background-color: #f25022;
+  color: #fff;
+  border: none;
+  padding: 5px 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.delete-conversation:hover {
+  background-color: #d62c1a;
+}
