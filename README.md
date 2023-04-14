@@ -39,3 +39,9 @@ Things I plan to add next unless I get a lot of feedback suggesting otherwise:
 - Sort conversations by date saved
 - A user setting you can toggle which allows you to "insert tags" every time you open the extension (so you don't have to click the button)
 
+
+## Contributions/Open source
+
+My only goal in making this project was to allow myself to save and tag my conversations, for my own personal benefit. Feel free to contribute, fork, modify, or do whatever you want with this extension. I highly doubt this will be useful beyond six months from now, hopefully OpenAI will just make a good UI so this isn't needed. 
+
+Feel free to submit issues or pull requests. 
