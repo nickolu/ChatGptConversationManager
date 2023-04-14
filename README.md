@@ -39,6 +39,7 @@ Things I plan to add next unless I get a lot of feedback suggesting otherwise:
 - Sort conversations by name
 - Sort conversations by date saved
 - A user setting you can toggle which allows you to "insert tags" every time you open the extension (so you don't have to click the button)
+- backup/upload conversations to/from a JSON file
 
 
 ## Contributions/Open source
