@@ -1,6 +1,9 @@
 document
   .getElementById("save-form")
   .addEventListener("submit", saveConversation);
+document
+  .getElementById("highlight-conversations")
+  .addEventListener("click", highlightConversations);
 
 const backgroundPort = chrome.runtime.connect({ name: "popup" });
 const tagFilter = document.getElementById("tag-filter");
@@ -72,6 +75,14 @@ function handleMessage(message) {
   if (message.action === "updateConversations") {
     updateConversationsList(message.data);
   }
+}
+
+function highlightConversations(tags) {
+  chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+    chrome.tabs.sendMessage(tabs[0].id, {
+      action: 'highlightConversations',
+    });
+  });
 }
 
 function updateConversationsList(conversations) {

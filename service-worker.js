@@ -86,3 +86,29 @@ chrome.runtime.onConnect.addListener((port) => {
     });
   }
 });
+
+chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+  if (message.action === 'getSavedConversations') {
+    (async () => {
+      const conversations = await getAllConversations();
+      sendResponse({ data: conversations });
+    })();
+
+    return true; // Indicates that we want to send a response asynchronously
+  }
+});
+
+async function getAllConversations() {
+  const db = await openDB();
+  const transaction = db.transaction(STORE_NAME, 'readonly');
+  const store = transaction.objectStore(STORE_NAME);
+
+  const request = store.getAll();
+  const result = await new Promise((resolve) => {
+    request.onsuccess = () => {
+      resolve(request.result || []);
+    };
+  });
+
+  return result;
+}
