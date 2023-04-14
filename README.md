@@ -2,6 +2,7 @@
 
 - save and tag your converstaions
 - filter conversations by tag
+- add tags to the conversations sidebar
 
 This extension does not make any external API calls or collect any user data. It uses the browser's indexedDb API to save your conversations, which is a a client-side, web-based database storage system that allows developers to store and manage complex data structures within a user's browser. Clearing your browser cache/history will not delete your data, however if you uninstall chrome you will lose your data. We'll add a way to back up your saved conversations and tags in the future. 
 
