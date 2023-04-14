@@ -112,3 +112,7 @@ async function getAllConversations() {
 
   return result;
 }
+
+chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
+  // this is here to prevent the error "Unchecked runtime.lastError: Could not establish connection. Receiving end does not exist."
+});
