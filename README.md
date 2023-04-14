@@ -1,5 +1,8 @@
 # ChatGPT Conversation Manager
 
+![image](https://user-images.githubusercontent.com/4297223/232099138-8bab45ec-8add-43de-b6a3-5ce065db8ef0.png)
+
+
 - save and tag your converstaions
 - filter conversations by tag
 - add tags to the conversations sidebar
